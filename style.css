@@ -1,0 +1,48 @@
+*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; 
+}
+
+/** 
+  https://stackoverflow.com/questions/28988445/css-62-5-why-do-developers-use-it
+  10px é um tamanho de fonte ridiculamente pequeno. No entanto, ele tem alguma utilidade se você aplicá-lo com cautela.
+  Ao redefinir a fonte raiz (HTML) para 62,5%, posso calcular todas as minhas unidades REM com a fórmula mágica de 1rem = 10px
+  Então, eu redefino o corpo de volta ao meu tamanho de fonte padrão usando EMs ( body { font-size: 1.6em }, proporcional ao número de 62,5%, agora é fácil ver que é 16 px)
+  A partir daí, todas as unidades podem ser declaradas como unidades em ou REM, proporcionais ao tamanho da fonte raiz.
+  */
+
+body {
+  background: #282a36;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.6em;
+  -webkit-font-smoothing: antialiased; /** qualidade retina */
+  scroll-behavior: smooth; /** scroll suave */
+}
+
+header {
+  padding: 3.2rem;
+  border-bottom: 1px solid #333;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin: 0 1.6rem
+}
+
+header nav a:hover {
+  color: #50fa7b;
+  transition: color 500ms;
+}
