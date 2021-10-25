@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+  .cards {
+    margin: 0 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
