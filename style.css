@@ -126,6 +126,7 @@ footer > nav a {
 .card__info {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .card__price {
@@ -145,18 +146,22 @@ footer > nav a {
   position: fixed;
   top: 0;
   left: 0;
+
+  opacity: 0;
+  visibility: hidden;
 }
 
 .modal {
-  background: #fff;
+  background: #282a36;
   width: 90%;
   height: 90%;
   margin: 5vh auto;
   position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .modal .close-modal {
-  color: #000;
+  color: #fff;
   position: absolute;
   top: 0;
   right: 0.8rem;
@@ -165,4 +170,17 @@ footer > nav a {
 }
 .modal .close-modal:hover {
   color: var(--color-green);
+}
+
+/* Modal active */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  top: 5%;
 }
