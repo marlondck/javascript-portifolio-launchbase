@@ -1,14 +1,16 @@
-const express = require('express')
-const nunjuks = require('nunjucks')
+const express = require("express");
+const nunjuks = require("nunjucks");
 
-const server = express()
+const server = express();
 
-server.set('view engine', 'html')
-nunjuks.configure('views', {
-  express: server
-})
+server.use(express.static("public"));
 
-server.get('/', (req, res) => res.render('index'))
+server.set("view engine", "html");
+nunjuks.configure("views", {
+  express: server,
+});
 
+server.get("/", (req, res) => res.render("about"));
+server.get("/portifolio", (req, res) => res.render("portifolio"));
 
-server.listen(3000)
+server.listen(3000);
