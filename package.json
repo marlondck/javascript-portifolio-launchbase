@@ -2,8 +2,8 @@
   "name": "javascript-portifolio-launchbase",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/marlondck/javascript-portifolio-launchbase.git",
-  "author": "marlondck <15050029+marlondck@users.noreply.github.com>",
+  "repository": "https://github.com/marlondenisck/javascript-portifolio-launchbase.git",
+  "author": "marlondenisck <15050029+marlondenisck@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
     "start": "node server.js",
